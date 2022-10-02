@@ -3,76 +3,51 @@
 body{
 	margin:0 auto;
 	background: ;
-	 font-size: 18px;
+	font-size: 18px;
 	font-family:sans-serif;
-color: #2D3748;
-
+	color: #2D3748;
 }
 
 header{
-grid-area:header;
-background-color:#63B3ED;
-color:#FFFFFF;
+	grid-area:header;
+	background-color:#63B3ED;
+	color:#FFFFFF;
 }
 
 h1{
 	font-size: 36px;
 	font-family:Times New Roman;
-	//color: #38B2AC;
 }
 
 h2{
 	font-size: 32px;
 	color: #48BB78;
+	line-height:0%;
 }
-
-p{
-	font-size: 18px;
-
-}
-
 
 .img1{
-	border-radius: 60%;
-	
+	border-radius: 50%;
 }
 
 
 .img2{
 	float:left;
-
-padding: 0 10px 0 0;
-	}
-
-.img3{
-float:right;
-padding:  0  0 0 10px; 
+	padding: 0 10px 0 0;
 }
 
+.img3{
+	float:right;
+	padding:  0  0 0 10px; 
+}
 
 article{
 	text-align: justify; 
 }
 
-.center{
-	display: block;
-	margin-left:auto;
-	margin-right:auto;
-	width:10%; 
-background: #5A67D8;
-}
-
-.column{
-float: left;
-width: 33.33%;
-}
-
 .container{
 	display: grid;
-grid-template-areas: 'header header' 'left right' 'footer footer';
- //grid-template-columns: 150px 150px;
- //grid-template-rows: 150px 150px 150px;
- grid-gap: 20px;
+	grid-template-areas: 'header header' 'left right' 'footer footer';
+	grid-gap: 20px;
 	position:relative;
 	margin:0 auto;
 	width:960px;
@@ -80,50 +55,58 @@ grid-template-areas: 'header header' 'left right' 'footer footer';
 }
 
 .col1{
-grid-area:left;
-width:550px;
-float:left;
+	grid-area:left;
+	width:550px;
+	float:left;
+	padding-bottom:100px;
 }
 
-
 .footer{
-//grid-area:footer;
-background-color:#2C5282;
-color:#FFFFFF;
-clear:both;
-position:absolute;
-
-bottom:20px;
-vertical-align:;
-width: 100%;
-height: 2.5rem;
+	background-color:#2C5282;
+	color:#FFFFFF;
+	clear:both;
+	position:absolute;
+	bottom:20px;
+	vertical-align:;
+	width: 100%;
+	height: 2.5rem;
 }
 
 .col2{ 
-grid-area:right;
-width:350px;
-//background-color:#5A67D8;
-padding:1em;
-margin-left:15px;
-float:right;
-
-
+	grid-area:right;
+	width:350px;
+	padding:1em;
+	margin-left:15px;
+	float:right;
 }
 
 .about{
-background-color:#E2E8F0;
-padding: 1em;
+	background-color:#E2E8F0;
+	padding: 1em;
 }
 
-.d&a{
-color: 718096;
+.da{
+	color: #718096;
+	line-height:15%;
 }
 
 .h32{
-color: #48BB78;
+	color: #48BB78;
 }
 
 .h31{
-color:#000000;
-font-family:Times New Roman;
+	color:#000000;
+	font-family:Times New Roman;
+}
+
+.list{
+	list-style-type:none;
+	padding:5px;
+	padding-left:0;
+	margin:0;
+}
+
+a:link {
+	color: #4299E1;
+	text-decoration:none;
 }
